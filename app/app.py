@@ -6,9 +6,17 @@ import cv2
 import numpy as np
 from pathlib import Path
 
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT_DIR))
+
+
 from core.grading import grade_card
 from core.alignment import align_card_robust
 from core.centering import compute_centering_final
+
 
 # =====================================================
 # Page config
